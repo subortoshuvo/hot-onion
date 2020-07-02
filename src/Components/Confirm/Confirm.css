@@ -1,0 +1,153 @@
+.bill {
+	background: #e5e5e5;
+	padding: 67px;
+	border-radius: 6px;
+	overflow: hidden;
+}
+
+
+.details {
+	background: #fff;
+	padding: 22px;
+	margin-top: 15px;
+	border-radius: 6px;
+	text-align: left;
+	height: 137px;
+	/* width: 251px; */
+}
+
+.details h3 {
+	font-size: 14px;
+} 
+
+.details p {
+	font-size: 11px;
+	font-weight: bold;
+} 
+
+.d-time {
+	text-align: left;
+	/* font-size: 20px; */
+} 
+
+.time {
+	font-size: 31px;
+	margin-left: -2px;
+}
+
+.img-fluid.rider {
+    width: 58px;
+    
+} 
+
+
+
+.rider-info p {
+	margin: 0;
+} 
+
+.rider-info .name {
+	font-size: 16px;
+} 
+
+.text-muted.ri {
+	font-size: 9px;
+} 
+
+.rider-info {
+	margin-left: 10px;
+	margin-top: 9px;
+} 
+
+
+
+.btn.contact {
+	width: 100px;
+	background: rgba(245, 135, 204 ) !important;
+	width: 100%;
+	color: #fff;
+	margin-top: 16px;
+}
+
+.img-fluid.bike {
+    margin-left: -435;
+    width: 64px;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  
+}
+
+
+
+
+.img-fluid.map {
+	height: 553px;
+}
+
+
+@keyframes example {
+    0%   {margin-left:-435px;}
+    100% {margin-left: 150%;}
+  }  
+
+
+  .rider.d-flex {
+	background: #fff;
+	padding: 4px;
+	border-radius: 4px;
+}  
+
+
+.node {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    display:inline-block;
+    transition: all 1000ms ease;
+}
+
+.activated {
+    box-shadow: 0px 0px 3px 2px rgba(194, 255, 194, 0.8);
+}
+
+.divider {
+	height: 65px;
+	width: 2px;
+	margin-left: 4px;
+	transition: all 800ms ease;
+}
+
+li .p {
+    display:block;
+    margin-left: 25px;
+}
+
+li {
+    list-style: none;
+    line-height: 1px;
+}
+
+.grey {
+	background-color: rgba(201, 201, 201, 1);
+	position: relative;
+	top: -20px;
+}
+.green {
+	background-color: rgba(92, 184, 92, 1);
+	position: absolute;
+	/* top: 10px; */
+	/* left: 0; */
+} 
+
+.d {
+	position: relative;
+	top: -26px;
+}
+#progress {
+	margin-left: -35px;
+}
+.blue { background-color: rgba(82, 165, 255, 1); }
+.green{ background-color: rgba(92, 184, 92, 1) }
+.red { background-color: rgba(255, 148, 148, 1); }
+.grey { background-color: rgba(201, 201, 201, 1); }

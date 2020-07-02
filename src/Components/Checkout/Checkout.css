@@ -1,0 +1,26 @@
+.row.checkout.py-4 {
+	display: flex;
+	justify-content: center;
+} 
+
+.checkout h1 {
+	font-size: 26px;
+	text-align: left;
+	margin-bottom: 26px;
+	/* border-bottom: 1px solid; */
+	/* width: 236px; */
+}  
+
+.save {
+	width: 98px;
+	border-radius: 11px;
+	background-color: rgba(245, 135, 204 ) !important;
+}  
+.btn.save {
+	background-color: #F91944 !important;
+	color: #fff;
+	width: 100%;
+}
+.cart-item {
+	text-align: left;
+}

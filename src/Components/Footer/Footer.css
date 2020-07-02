@@ -1,0 +1,64 @@
+.footer {
+	background: #000007;
+}
+
+.footer img {
+	width: 236px;
+	height: 43px;
+	margin-top: 36px;
+	margin-left: 47px;
+} 
+
+.food-blog li {
+	text-align: left;
+	list-style: none;
+	margin: 2px;
+	/* margin-top: 19px; */
+	line-height: 23px;
+}
+.food-blog li a {
+	color: #fffeff !important;
+	text-decoration: none;
+	opacity: 0.5;
+}
+.food-blog {
+	margin-top: 30px;
+} 
+
+.faqs {
+	text-align: left;
+	list-style: none;
+	margin: 2px;
+} 
+
+.faqs {
+	text-align: left;
+	list-style: none;
+	margin: 2px;
+	margin-top: 30px;
+}
+
+.faqs li a {
+	color: #fff!important;
+	opacity: 0.6;
+} 
+.faqs li {
+	line-height: 23px;
+}
+.copyright p {
+	text-align: left;
+	/* color: #fff; */
+	margin-left: 47px;
+} 
+
+.privary-list li {
+	text-align: center;
+	list-style: none;
+	display: inline;
+	margin-left: 57px;
+} 
+
+.privary-list li a{
+	color: #fff!important;
+	opacity: 0.6;
+}

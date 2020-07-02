@@ -35,4 +35,73 @@
   to {
     transform: rotate(360deg);
   }
+} 
+
+a {
+
+	color: #000!important;
+	text-decoration: none!important;
+}
+a:hover {
+	color: #000!important;
+	text-decoration: none!important;
+} 
+
+.btn-primary:hover {
+	color: #fff;
+	background-color: #F91944 !important;
+	border-color: #F91944 !important;
+	color: #fff !important;
+} 
+
+.btn-success:hover {
+	color: #fff;
+	background-color: #F91944 !important;
+	border-color: #F91944 !important;
+  color: #fff !important;
+ 
+}   
+.btn-left {
+  background-color: #F91944 !important;
+	border: 0;
+	/* padding: 7px; */
+	padding: 3px 17px;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 11px;
+	color: #fff;
+	font-size: 16px;
+} 
+
+.btn-right {
+  background-color: #F91944 !important;
+	border: 0;
+	/* padding: 7px; */
+	padding: 3px 17px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 11px;
+	color: #fff;
+	font-size: 16px;
+}
+
+.bt {
+  background-color: #F91944 !important;
+	margin: 0;
+	padding: 4px 15px;
+	color: #fff;
+}
+.btn.btn-success.addFood.mt-3{
+  background-color: #F91944 !important;
+	border-color: #F91944 !important;
+  color: #fff !important;
+}
+.btn-success {
+	color: #fff;
+	background-color: #F91944 !important;
+	border-color: #F91944 !important;
+  color: #fff !important;
+  width: 30%;
+}   
+
+.btn.btn-secondary {
+	width: 30%;
 }

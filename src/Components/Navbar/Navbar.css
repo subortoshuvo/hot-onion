@@ -1,0 +1,44 @@
+nav ul li {
+	display: inline-block;
+	margin: 21px;
+	text-transform: uppercase;
+	color: #000;
+} 
+
+
+nav a {
+	font-size: 18px;
+	text-transform: capitalize;
+	font-weight: normal;
+}  
+
+/* Add a black background color to the top navigation */
+
+  /* Style the links inside the navigation bar */
+  nav a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+	border-bottom: 3px solid transparent;
+  }
+  
+  nav a:hover {
+	border-bottom: 3px solid red;
+  }
+  
+  nav a.active {
+	border-bottom: 3px solid red;
+  }
+
+
+
+
+
+
+
+
+	

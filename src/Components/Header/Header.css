@@ -1,0 +1,101 @@
+
+.logo {
+	width: 180px;
+}
+.header-banner {
+	background-image: url(/static/media/bannerbackground.e0679251.png);
+	height: 422px;
+	/* overflow: hidden; */
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+.header-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+} 
+.btn-primary {
+	color: #fff;
+	background-color: #F91944!important;
+	border-color: #F91944!important;
+	color: #fff !important;
+}
+.btn-primary:hover {
+	color: #fff;
+	background-color: #F91944!important;
+	border-color: #F91944!important;
+	color: #fff !important;
+} 
+
+.btn.btn-primary {
+	border-top-left-radius: 17px;
+	border-bottom-left-radius: 17px;
+	border-top-right-radius: 17px;
+	border-bottom-right-radius: 17px;
+} 
+
+.form-control.mt-3.header-search {
+	border-top-left-radius: 17px;
+	border-bottom-left-radius: 17px;
+	border-right: 0px;
+	width: 364px;
+	height: 48px;
+
+} 
+
+.btn.btn-primary.mt-3.header-btn {
+	width: 101px;
+	margin-left: -24px;
+}  
+
+.header-middle-content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.header-text {
+	width: 100%;
+	font-size: 36px;
+} 
+
+.form-control.mt-3.header-search {
+	margin: auto;
+}
+
+.btn.btn-primary.mt-3.header-btn {
+	width: 101px;
+	margin-left: -99px;
+	/* margin: ; */
+	margin-right: auto;
+} 
+
+.form-control:focus {
+
+	outline: 0;
+	box-shadow: none!important;
+	border-color: none!important;
+	color: none!important;
+} 
+
+.d-name {
+	/* margin-top: 32px; */
+	top: px;
+	position: relative;
+	top: 3px;
+} 
+
+.login.mr-2.ml-2 {
+	background: none;
+	font-size: 16px;
+	font-weight: ;
+}  
+
+.badge-danger {
+	color: #fff;
+	background-color: #dc3545;
+	position: relative;
+	top: -9px;
+}

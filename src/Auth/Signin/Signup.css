@@ -1,0 +1,48 @@
+.error {
+	text-align: left;
+	color: red;
+} 
+
+
+.btn.btn-primary.btn-signup {
+	width: 100%;
+} 
+
+.signup {
+	background: url(/static/media/bannerbackground.e0679251.png);
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	height: 110%;
+	/* padding: 64px; */
+	height: 714px;
+}
+
+.img-fluid.logo2 {
+	width: 186px;
+	margin-top: 67px;
+	margin-bottom: 46px;
+} 
+
+.btn.btn-primary.s-btn {
+	width: 100%;
+	border-radius: 1\[x;
+	border-radius: 7px;
+} 
+
+.sign-form .form-control.mb-3 {
+	height: 42px;
+	/* margin-bottom: 67px; */
+} 
+
+.btn.btn-primary.s-btn {
+	width: 100%;
+	border-radius: 1\[x;
+	border-radius: 7px;
+	height: 42px;
+} 
+
+.already-account {
+	color: red !important;
+	/* margin-top: -42px; */
+}
