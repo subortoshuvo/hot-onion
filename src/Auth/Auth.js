@@ -39,12 +39,11 @@ export const useAuth = () =>  useContext(AuthContext);
 export function PrivateRoute({ children, ...rest }) {
 
     const auth = useAuth();
-   console.log(auth);
     return ( 
       <Route
         {...rest}
         render={({ location }) =>
-        auth.user.emailVerified ?
+        auth.user.isLogedIn?
         (children) :
         
         (
@@ -285,30 +284,34 @@ const Auth  = () => {
           const reset = document.getElementById('login');
           reset.reset();
 
-           const userInfo = {
-               ...user
-           } 
-
-            userInfo.isLogedIn = true;
-
-             const data =  getUser(res);
-             setUser(data);
-
-              setUser(userInfo);
-      
-
             if(res.user.emailVerified  === true ){    
                
+
+              const userInfo = {
+                ...user
+            } 
+ 
+             userInfo.isLogedIn = true;
+ 
+              const data =  getUser(res);
+              setUser(data);
+ 
+               setUser(userInfo);
+
+
                window.location.pathname = '/checkout';    
                return res;
             }
-            else{
+             else{
                 alert('Your email is not verified. Go to your email and verify it');
                 return false
             }
+
+          }
+           
     
    
-         })
+        )
          
          .catch(function(error) {
            
@@ -324,13 +327,9 @@ const Auth  = () => {
      }  
 
 
-
-
-    
-    const provider = new firebase.auth.GoogleAuthProvider();
-
     const google  = () => {
-
+  
+      const provider = new firebase.auth.GoogleAuthProvider();
       return  firebase.auth().signInWithPopup(provider)
         .then(res => {
              
@@ -348,10 +347,12 @@ const Auth  = () => {
     } 
 
 
-    const fbProvider = new firebase.auth.FacebookAuthProvider();
+
     const facebook = () => {   
-      firebase.auth().signInWithPopup(fbProvider).then(function(result) {
-   
+
+      const Provider = new firebase.auth.FacebookAuthProvider();
+      return firebase.auth().signInWithPopup(Provider).then(function(result) {
+       console.log(result.user);
         const userInfo = getUser(result.user);
         setUser(userInfo);
         window.location.pathname = '/checkout';    
@@ -403,14 +404,17 @@ const Auth  = () => {
      firebase.auth().onAuthStateChanged(function(user) {
      if (user) {
 
-
+        
           const data =  getUser(user);
             setUser(data);
       
           const userInfo = {
              ...user
          } 
-          userInfo.isLogedIn = true;
+           
+         if(userInfo.emailVerified=== true || userInfo.displayName.length>0){
+           userInfo.isLogedIn = true;
+         }
           setUser(userInfo); 
 
       

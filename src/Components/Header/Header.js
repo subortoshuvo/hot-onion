@@ -9,8 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee,faCartPlus } from '@fortawesome/free-solid-svg-icons'
 const Header = () => {
     const auth  = useAuth();
-
-    console.log(auth);
+      
     const cart =   getDatabaseCart();
     const cartItem  =   Object.keys(cart).length;
 
@@ -26,13 +25,13 @@ const Header = () => {
                   
      
                     {
-                         auth.user.emailVerified===true   ? <span className="d-name">{  auth.user.displayName}</span>:
+                         auth.user.isLogedIn ? <span className="d-name">{  auth.user.displayName}</span>:
                         <a className="btn btn-primary ml-2" href="/signup">Sign up</a>
                     }
                    
                       
                    
-                   {auth.user.emailVerified?
+                   { auth.user.isLogedIn ?
                      <button onClick={auth.Signout} className="btn">LogOut</button>
                    :
                      <a className="login mr-2 ml-2" href="/login">Login</a>

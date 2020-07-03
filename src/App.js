@@ -27,6 +27,7 @@ import Category from './Components/Category/Category'
 import Login from './Auth/Login/Login';
 import FoodSingle from './Components/FoodSingle/FoodSingle';
 import Reset from './Auth/Reset/Reset';
+import NotFound from './Components/404/NotFound';
 
 
 
@@ -87,9 +88,12 @@ import Reset from './Auth/Reset/Reset';
                  </Route>
                                 
                  <Route path="/:id">
-                    <Category></Category> */}
+                    <Category></Category> 
                  </Route>
-               
+
+                 <Route path="*">
+                   <NotFound></NotFound>
+                 </Route>
 
 
           </Switch> 
